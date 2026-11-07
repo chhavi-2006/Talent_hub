@@ -8,8 +8,10 @@ __pycache__/
 *.db-wal
 backend/venv/
 v2/backend/venv/
+finpay/backend/venv/
 backend/talenthub.db*
 v2/backend/talenthub_v2.db*
+finpay/backend/finpay.db*
 venv/
 .env.local
 
@@ -19,6 +21,8 @@ frontend/node_modules/
 frontend/dist/
 v2/frontend/node_modules/
 v2/frontend/dist/
+finpay/frontend/node_modules/
+finpay/frontend/dist/
 
 # IDE / OS
 .vscode/
