@@ -1,10 +1,15 @@
-# TalentHub Campus Placement Management System (v2)
+# TalentHub Campus Placement Management System
 
-TalentHub is a full-stack web application that manages the college placement process end-to-end:
-students apply for jobs, companies shortlist eligible students, interviews get scheduled and
-recorded, offers are issued and accepted, and the placement coordinator tracks placement statistics.
+TalentHub is an end-to-end campus recruitment and placement management platform connecting students, corporate employers, and university placement coordinators.
 
-Built with a layered architecture:
+> **Note on Version 2 (Production Upgrade):**
+> This repository contains both the baseline prototype and the upgraded **Version 2 (`v2/`)** system.
+> - **Silent Decisions Audit**: See [`SILENT_DECISIONS.md`](./SILENT_DECISIONS.md) or [`TalentHub_Silent_Decisions.docx`](./TalentHub_Silent_Decisions.docx) for a full architectural audit of all undocumented logic, security flaws, and business rule shortcuts in the initial prototype.
+> - **Version 2 Production Code**: See [`v2/README.md`](./v2/README.md) for the enterprise implementation featuring strict One-Offer & Dream tier policies, multi-round interview pipelines (1:N), discipline filtering, foreign-key relational guards, and a completely redesigned light-themed executive frontend.
+
+---
+
+## System Overview & Architecture
 
 ```
 backend/
