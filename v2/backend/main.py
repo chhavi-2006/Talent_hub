@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import applications, auth, companies, coordinator, interviews, jobs, offers, students
+from app.api import applications, auth, companies, coordinator, exports, interviews, jobs, offers, students
 from app.core.config import settings
 from app.core.database import AsyncSessionLocal, init_db
 from app.seed import seed_if_empty
@@ -44,6 +44,7 @@ app.include_router(applications.router, prefix=settings.API_V1_STR)
 app.include_router(interviews.router, prefix=settings.API_V1_STR)
 app.include_router(offers.router, prefix=settings.API_V1_STR)
 app.include_router(coordinator.router, prefix=settings.API_V1_STR)
+app.include_router(exports.router, prefix=settings.API_V1_STR)  # CSV/JSON exports — added by chhavi-2006
 
 
 @app.get("/")
